@@ -6,7 +6,6 @@ class User {
   final String pathMiniature;
   final Color letterColor;
   final Color backgroundColor;
-  final double radius;
 
   const User({
     this.fullName = "AA",
@@ -14,7 +13,6 @@ class User {
     this.letterColor = Colors.white,
     this.backgroundColor = Colors.black,
     this.pathMiniature,
-    this.radius = 30,
   });
 }
 
@@ -52,5 +50,9 @@ final Map<String, User> usersData = {
     letterColor: Color(0xff624afb),
     backgroundColor: Color(0xfff0edff),
     nameMiniature: "MK",
+  ),
+  "kenneth": User(
+    fullName: "Kenneth Erickson",
+    pathMiniature: "assets/kenneth.png",
   ),
 };

@@ -3,8 +3,14 @@ import 'package:google_fonts/google_fonts.dart';
 
 class SimpleHeader extends StatelessWidget {
   final String title;
+  final double fontSize;
+  final Color color;
 
-  SimpleHeader({@required this.title});
+  SimpleHeader({
+    @required this.title,
+    this.fontSize = 16,
+    this.color = const Color(0xff8f94a2),
+  });
 
   @override
   Widget build(BuildContext context) {
@@ -14,8 +20,8 @@ class SimpleHeader extends StatelessWidget {
         Text(
           this.title,
           style: GoogleFonts.lato(
-            fontSize: 16,
-            color: Color(0xff8f94a2),
+            fontSize: this.fontSize,
+            color: this.color,
             fontWeight: FontWeight.w500,
           ),
         ),

@@ -3,8 +3,9 @@ import 'package:flutter/material.dart';
 
 class UserAvatar extends StatelessWidget {
   final User user;
+  final double radius;
 
-  const UserAvatar({@required this.user});
+  const UserAvatar({@required this.user, this.radius = 30});
 
   @override
   Widget build(BuildContext context) {
@@ -12,7 +13,7 @@ class UserAvatar extends StatelessWidget {
 
     if (this.user.pathMiniature == null) {
       avatar = CircleAvatar(
-        radius: user.radius,
+        radius: this.radius,
         child: Text(
           this.user.nameMiniature,
           style: TextStyle(
@@ -23,7 +24,7 @@ class UserAvatar extends StatelessWidget {
       );
     } else {
       avatar = CircleAvatar(
-        radius: this.user.radius,
+        radius: this.radius,
         backgroundImage: AssetImage(
           this.user.pathMiniature,
         ),
