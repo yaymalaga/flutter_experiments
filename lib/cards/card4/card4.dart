@@ -9,8 +9,8 @@ class Card4 extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return GradientCard(
-      height: 273,
-      padding: EdgeInsets.symmetric(horizontal: 37, vertical: 37),
+      height: 240,
+      padding: EdgeInsets.symmetric(horizontal: 37, vertical: 30),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
