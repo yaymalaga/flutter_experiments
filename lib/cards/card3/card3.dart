@@ -1,3 +1,4 @@
+import 'package:cards_ui/components/avatar_header.dart';
 import 'package:cards_ui/components/simple_card.dart';
 import 'package:cards_ui/components/user_avatar.dart';
 import 'package:cards_ui/utils/users.dart';
@@ -13,34 +14,12 @@ class Card3 extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          ListTile(
-            contentPadding: EdgeInsets.zero,
-            leading: UserAvatar(
+          AvatarHeader(
+            avatar: UserAvatar(
               user: usersData["mille"],
             ),
-            title: Text(
-              "Mille Knudsen",
-              style: GoogleFonts.lato(
-                fontSize: 16,
-                color: Color(0xff131721),
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-            subtitle: Text(
-              "Product Designer",
-              style: GoogleFonts.lato(
-                fontSize: 14,
-                color: Color(0xff858997),
-                fontWeight: FontWeight.w500,
-              ),
-            ),
-            trailing: IconButton(
-              icon: Icon(
-                Icons.more_horiz,
-                color: Color(0xff8f94a2),
-              ),
-              onPressed: () => {},
-            ),
+            title: "Mille Knudsen",
+            subtitle: "Product Designer",
           ),
           Stack(
             children: [

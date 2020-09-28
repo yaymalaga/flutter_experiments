@@ -4,11 +4,14 @@ class GradientCard extends StatelessWidget {
   final Widget child;
   final double height;
   final EdgeInsets padding;
+  final Alignment endGradient;
 
-  GradientCard(
-      {@required this.child,
-      @required this.height,
-      this.padding = const EdgeInsets.fromLTRB(20, 6, 20, 24)});
+  GradientCard({
+    @required this.child,
+    @required this.height,
+    this.padding = const EdgeInsets.fromLTRB(20, 6, 20, 24),
+    this.endGradient = Alignment.bottomRight,
+  });
 
   @override
   Widget build(BuildContext context) {
