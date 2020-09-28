@@ -1,9 +1,8 @@
 import 'package:cards_ui/components/user_avatar.dart';
-import 'package:cards_ui/utils/users.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
-class AvatarHeader extends StatelessWidget {
+class Header extends StatelessWidget {
   final String title;
   final String subtitle;
   final Color titleColor;
@@ -15,12 +14,12 @@ class AvatarHeader extends StatelessWidget {
   final UserAvatar avatar;
   final EdgeInsets margin;
 
-  AvatarHeader({
-    @required this.avatar,
+  Header({
+    this.avatar,
     @required this.title,
     this.titleColor = const Color(0xff131721),
     this.titleSize = 16,
-    @required this.subtitle,
+    this.subtitle,
     this.subtitleColor = const Color(0xff858997),
     this.subtitleSize = 14,
     this.margin,
@@ -30,14 +29,17 @@ class AvatarHeader extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final subtitleWidget = Text(
-      this.subtitle,
-      style: GoogleFonts.lato(
-        fontSize: this.subtitleSize,
-        color: this.subtitleColor,
-        fontWeight: FontWeight.w500,
-      ),
-    );
+    var subtitleWidget;
+    if (this.subtitle != null) {
+      subtitleWidget = Text(
+        this.subtitle,
+        style: GoogleFonts.lato(
+          fontSize: this.subtitleSize,
+          color: this.subtitleColor,
+          fontWeight: FontWeight.w500,
+        ),
+      );
+    }
 
     return ListTile(
       contentPadding: EdgeInsets.zero,

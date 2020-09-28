@@ -1,4 +1,4 @@
-import 'package:cards_ui/components/avatar_header.dart';
+import 'package:cards_ui/components/header.dart';
 import 'package:cards_ui/components/simple_card.dart';
 import 'package:cards_ui/components/user_avatar.dart';
 import 'package:cards_ui/utils/users.dart';
@@ -14,7 +14,7 @@ class Card3 extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          AvatarHeader(
+          Header(
             avatar: UserAvatar(
               user: usersData["mille"],
             ),

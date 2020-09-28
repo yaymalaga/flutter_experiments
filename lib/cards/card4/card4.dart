@@ -1,5 +1,5 @@
+import 'package:cards_ui/components/header.dart';
 import 'package:cards_ui/components/gradient_card.dart';
-import 'package:cards_ui/components/simple_header.dart';
 import 'package:cards_ui/components/user_avatar.dart';
 import 'package:cards_ui/utils/users.dart';
 import 'package:flutter/material.dart';
@@ -14,23 +14,15 @@ class Card4 extends StatelessWidget {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
-          Row(
-            children: [
-              UserAvatar(
-                radius: 18,
-                user: usersData["kenneth"],
-              ),
-              SizedBox(
-                width: 18,
-              ),
-              Expanded(
-                child: SimpleHeader(
-                  title: usersData["kenneth"].fullName,
-                  color: Colors.white,
-                  fontSize: 18,
-                ),
-              )
-            ],
+          Header(
+            avatar: UserAvatar(
+              radius: 18,
+              user: usersData["kenneth"],
+            ),
+            title: "Kenneth Erickson",
+            titleColor: Colors.white,
+            titleSize: 18,
+            iconColor: Color(0xffc3c6d1),
           ),
           Container(
             margin: EdgeInsets.only(

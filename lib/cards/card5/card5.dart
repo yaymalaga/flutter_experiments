@@ -1,4 +1,4 @@
-import 'package:cards_ui/components/avatar_header.dart';
+import 'package:cards_ui/components/header.dart';
 import 'package:cards_ui/components/gradient_card.dart';
 import 'package:cards_ui/components/user_avatar.dart';
 import 'package:cards_ui/utils/users.dart';
@@ -12,7 +12,7 @@ class Card5 extends StatelessWidget {
       padding: EdgeInsets.symmetric(horizontal: 25),
       endGradient: Alignment(1, 0),
       child: Center(
-        child: AvatarHeader(
+        child: Header(
           avatar: UserAvatar(
             user: usersData["kenneth"],
           ),

@@ -1,6 +1,6 @@
 import 'package:cards_ui/cards/card1/components/card1_user.dart';
+import 'package:cards_ui/components/header.dart';
 import 'package:cards_ui/components/simple_card.dart';
-import 'package:cards_ui/components/simple_header.dart';
 import 'package:cards_ui/utils/users.dart';
 import 'package:flutter/material.dart';
 
@@ -11,7 +11,8 @@ class Card1 extends StatelessWidget {
       height: 333,
       child: Column(
         children: [
-          SimpleHeader(
+          Header(
+            titleColor: Color(0xff8f94a2),
             title: "Total Active Users",
           ),
           Expanded(
