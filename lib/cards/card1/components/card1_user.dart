@@ -1,51 +1,24 @@
+import 'package:cards_ui/components/user_avatar.dart';
+import 'package:cards_ui/utils/users.dart';
 import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Card1User extends StatelessWidget {
-  final String name;
-  final String nameMiniature;
-  final String pathMiniature;
-  final Color letterColor;
-  final Color backgroundColor;
+  final User user;
 
-  const Card1User(this.name,
-      {this.nameMiniature = "AA",
-      this.letterColor = Colors.white,
-      this.backgroundColor = Colors.black,
-      this.pathMiniature});
+  const Card1User({@required this.user});
 
   @override
   Widget build(BuildContext context) {
-    CircleAvatar avatar;
-    if (this.pathMiniature == null) {
-      avatar = CircleAvatar(
-        radius: 30,
-        child: Text(
-          this.nameMiniature,
-          style: TextStyle(
-            color: this.letterColor,
-          ),
-        ),
-        backgroundColor: this.backgroundColor,
-      );
-    } else {
-      avatar = CircleAvatar(
-        radius: 30,
-        backgroundImage: AssetImage(
-          this.pathMiniature,
-        ),
-      );
-    }
-
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        avatar,
+        UserAvatar(user: this.user),
         SizedBox(
           height: 12,
         ),
         Text(
-          this.name,
+          this.user.fullName,
           style: GoogleFonts.lato(
             fontSize: 17,
             color: Color(0xff131721),

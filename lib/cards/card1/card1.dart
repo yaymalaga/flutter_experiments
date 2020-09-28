@@ -1,6 +1,7 @@
 import 'package:cards_ui/cards/card1/components/card1_user.dart';
 import 'package:cards_ui/components/simple_card.dart';
 import 'package:cards_ui/components/simple_header.dart';
+import 'package:cards_ui/utils/users.dart';
 import 'package:flutter/material.dart';
 
 class Card1 extends StatelessWidget {
@@ -21,18 +22,13 @@ class Card1 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Card1User(
-                    "Janice",
-                    pathMiniature: "assets/janice.png",
+                    user: usersData["janice"],
                   ),
                   Card1User(
-                    "Edward",
-                    letterColor: Color(0xff624afb),
-                    backgroundColor: Color(0xfff0edff),
-                    nameMiniature: "EA",
+                    user: usersData["edward"],
                   ),
                   Card1User(
-                    "Jesse",
-                    pathMiniature: "assets/jesse.png",
+                    user: usersData["jesse"],
                   ),
                 ],
               ),
@@ -40,18 +36,13 @@ class Card1 extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
                   Card1User(
-                    "Allan",
-                    letterColor: Color(0xfffb4eb3),
-                    backgroundColor: Color(0xffffedf7),
-                    nameMiniature: "AD",
+                    user: usersData["allan"],
                   ),
                   Card1User(
-                    "Brenda",
-                    pathMiniature: "assets/brenda.png",
+                    user: usersData["brenda"],
                   ),
                   Card1User(
-                    "Joseph",
-                    pathMiniature: "assets/joseph.png",
+                    user: usersData["joseph"],
                   ),
                 ],
               ),
