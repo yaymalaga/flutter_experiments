@@ -1,8 +1,6 @@
 import 'package:cards_ui/cards/card1/card1.dart';
-import 'package:cards_ui/components/simple_card.dart';
-import 'package:cards_ui/components/simple_header.dart';
+import 'package:cards_ui/cards/card3/card3.dart';
 import 'package:flutter/material.dart';
-import 'package:google_fonts/google_fonts.dart';
 
 void main() {
   runApp(MyApp());
@@ -32,6 +30,8 @@ class HomePage extends StatelessWidget {
           padding: EdgeInsets.all(28),
           children: [
             Card1(),
+            SizedBox(height: 30),
+            Card3(),
           ],
         ),
       ),

@@ -47,4 +47,10 @@ final Map<String, User> usersData = {
     fullName: "Joseph",
     pathMiniature: "assets/joseph.png",
   ),
+  "mille": User(
+    fullName: "Mille Knudsen",
+    letterColor: Color(0xff624afb),
+    backgroundColor: Color(0xfff0edff),
+    nameMiniature: "MK",
+  ),
 };
