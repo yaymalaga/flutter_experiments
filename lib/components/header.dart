@@ -13,6 +13,7 @@ class Header extends StatelessWidget {
   final FontWeight titleWeight;
   final UserAvatar avatar;
   final EdgeInsets margin;
+  final Widget trailing;
 
   Header({
     this.avatar,
@@ -25,6 +26,7 @@ class Header extends StatelessWidget {
     this.margin,
     this.titleWeight = FontWeight.w500,
     this.iconColor = const Color(0xff8f94a2),
+    this.trailing,
   });
 
   @override
@@ -58,13 +60,17 @@ class Header extends StatelessWidget {
               child: subtitleWidget,
               margin: this.margin,
             ),
-      trailing: IconButton(
-        icon: Icon(
-          Icons.more_horiz,
-          color: this.iconColor,
-        ),
-        onPressed: () => {},
-      ),
+      trailing: this.trailing == null
+          ? IconButton(
+              icon: Icon(
+                Icons.more_horiz,
+                color: this.iconColor,
+              ),
+              onPressed: () => {},
+            )
+          : InkWell(
+              child: this.trailing,
+            ),
     );
   }
 }
