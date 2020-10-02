@@ -40,6 +40,7 @@ class Header extends StatelessWidget {
           color: this.subtitleColor,
           fontWeight: FontWeight.w500,
         ),
+        overflow: TextOverflow.ellipsis,
       );
     }
 

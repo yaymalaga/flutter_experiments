@@ -55,4 +55,8 @@ final Map<String, User> usersData = {
     fullName: "Kenneth Erickson",
     pathMiniature: "assets/kenneth.png",
   ),
+  "anne": User(
+    fullName: "Anne Yates",
+    pathMiniature: "assets/jesse.png",
+  ),
 };
