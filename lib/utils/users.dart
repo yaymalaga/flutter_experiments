@@ -4,12 +4,14 @@ class User {
   final String fullName;
   final String nameMiniature;
   final String pathMiniature;
+  final String subtitle;
   final Color letterColor;
   final Color backgroundColor;
 
   const User({
     this.fullName = "AA",
     this.nameMiniature = "AA",
+    this.subtitle,
     this.letterColor = Colors.white,
     this.backgroundColor = Colors.black,
     this.pathMiniature,
@@ -58,5 +60,39 @@ final Map<String, User> usersData = {
   "anne": User(
     fullName: "Anne Yates",
     pathMiniature: "assets/jesse.png",
+  ),
+  "marisa": User(
+    fullName: "Marisa Fair",
+    pathMiniature: "assets/janice.png",
+    subtitle: "Berlin, Germany",
+  ),
+  "kenneth2": User(
+    fullName: "Kenneth Erickson",
+    letterColor: Color(0xfffb914e),
+    backgroundColor: Color(0xfffff0e6),
+    nameMiniature: "KE",
+    subtitle: "Chicago, IL",
+  ),
+  "michelle": User(
+    fullName: "Michelle Lake",
+    pathMiniature: "assets/brenda.png",
+    subtitle: "San Diego, CA",
+  ),
+  "lanette": User(
+    fullName: "Lanette Strand",
+    pathMiniature: "assets/brenda.png",
+    subtitle: "Lake Villa, IL",
+  ),
+  "joyce": User(
+    fullName: "Joyce Tuck",
+    letterColor: Color(0xff624afb),
+    backgroundColor: Color(0xfff0edff),
+    nameMiniature: "JT",
+    subtitle: "Southfield, MI",
+  ),
+  "troy": User(
+    fullName: "Troy Brown",
+    pathMiniature: "assets/joseph.png",
+    subtitle: "Los Angeles, CA",
   ),
 };
