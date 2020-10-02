@@ -1,4 +1,5 @@
 import 'package:cards_ui/cards/card1/card1.dart';
+import 'package:cards_ui/cards/card2/card2.dart';
 import 'package:cards_ui/cards/card3/card3.dart';
 import 'package:cards_ui/cards/card4/card4.dart';
 import 'package:cards_ui/cards/card5/card5.dart';
@@ -35,6 +36,8 @@ class HomePage extends StatelessWidget {
           padding: EdgeInsets.all(28),
           children: [
             Card1(),
+            SizedBox(height: 30),
+            Card2(),
             SizedBox(height: 30),
             Card3(),
             SizedBox(height: 30),

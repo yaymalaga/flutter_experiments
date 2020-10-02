@@ -5,6 +5,7 @@ class User {
   final String nameMiniature;
   final String pathMiniature;
   final String subtitle;
+  final int notifications;
   final Color letterColor;
   final Color backgroundColor;
 
@@ -12,6 +13,7 @@ class User {
     this.fullName = "AA",
     this.nameMiniature = "AA",
     this.subtitle,
+    this.notifications,
     this.letterColor = Colors.white,
     this.backgroundColor = Colors.black,
     this.pathMiniature,
@@ -65,6 +67,7 @@ final Map<String, User> usersData = {
     fullName: "Marisa Fair",
     pathMiniature: "assets/janice.png",
     subtitle: "Berlin, Germany",
+    notifications: 4,
   ),
   "kenneth2": User(
     fullName: "Kenneth Erickson",
@@ -72,6 +75,7 @@ final Map<String, User> usersData = {
     backgroundColor: Color(0xfffff0e6),
     nameMiniature: "KE",
     subtitle: "Chicago, IL",
+    notifications: 2,
   ),
   "michelle": User(
     fullName: "Michelle Lake",
