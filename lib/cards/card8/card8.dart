@@ -35,7 +35,7 @@ class Card8 extends StatelessWidget {
               titleColor: Color(0xff131721),
               titleSize: 16,
               titleWeight: FontWeight.w500,
-              subtitle: usersData["anne"].fullName,
+              subtitle: usersData[people[i]].fullName,
               subtitleColor: Color(0xff858997),
               subtitleSize: 13,
               trailing: SizedBox(),

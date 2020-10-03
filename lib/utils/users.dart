@@ -54,14 +54,17 @@ final Map<String, User> usersData = {
     letterColor: Color(0xff624afb),
     backgroundColor: Color(0xfff0edff),
     nameMiniature: "MK",
+    subtitle: "Product Designer",
   ),
   "kenneth": User(
     fullName: "Kenneth Erickson",
     pathMiniature: "assets/kenneth.png",
+    subtitle: "San Diego, CA",
   ),
   "anne": User(
     fullName: "Anne Yates",
     pathMiniature: "assets/jesse.png",
+    subtitle: "3:10 PM Tuesday, November 12",
   ),
   "marisa": User(
     fullName: "Marisa Fair",

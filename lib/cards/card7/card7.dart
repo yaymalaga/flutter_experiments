@@ -1,5 +1,6 @@
 import 'package:cards_ui/components/header.dart';
 import 'package:cards_ui/components/gradient_card.dart';
+import 'package:cards_ui/components/likes_info.dart';
 import 'package:cards_ui/components/simple_card.dart';
 import 'package:cards_ui/components/user_avatar.dart';
 import 'package:cards_ui/utils/users.dart';
@@ -24,7 +25,7 @@ class Card7 extends StatelessWidget {
             titleColor: Color(0xff131721),
             titleSize: 16,
             titleWeight: FontWeight.w500,
-            subtitle: "3:10 PM Tuesday, November 12",
+            subtitle: usersData["anne"].subtitle,
             subtitleColor: Color(0xff858997),
             subtitleSize: 13,
             iconColor: Color(0xffc7c9d0),
@@ -39,24 +40,10 @@ class Card7 extends StatelessWidget {
             ),
           ),
           Spacer(flex: 3),
-          Row(
-            children: [
-              Icon(
-                Icons.thumb_up,
-                color: Color(0xff5d6be5),
-              ),
-              SizedBox(
-                width: 8,
-              ),
-              Text(
-                "783 Likes",
-                style: GoogleFonts.lato(
-                  fontSize: 17,
-                  color: Color(0xff131721),
-                  fontWeight: FontWeight.w500,
-                ),
-              ),
-            ],
+          LikesInfo(
+            iconColor: Color(0xff5d6be5),
+            textColor: Color(0xff131721),
+            likesNumber: 783,
           )
         ],
       ),

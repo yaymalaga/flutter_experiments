@@ -18,8 +18,8 @@ class Card3 extends StatelessWidget {
             avatar: UserAvatar(
               user: usersData["mille"],
             ),
-            title: "Mille Knudsen",
-            subtitle: "Product Designer",
+            title: usersData["mille"].fullName,
+            subtitle: usersData["mille"].subtitle,
           ),
           Stack(
             children: [

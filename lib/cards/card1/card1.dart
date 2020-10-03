@@ -16,39 +16,40 @@ class Card1 extends StatelessWidget {
             title: "Total Active Users",
           ),
           Expanded(
-              child: Column(
-            mainAxisAlignment: MainAxisAlignment.spaceAround,
-            children: [
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Card1User(
-                    user: usersData["janice"],
-                  ),
-                  Card1User(
-                    user: usersData["edward"],
-                  ),
-                  Card1User(
-                    user: usersData["jesse"],
-                  ),
-                ],
-              ),
-              Row(
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: [
-                  Card1User(
-                    user: usersData["allan"],
-                  ),
-                  Card1User(
-                    user: usersData["brenda"],
-                  ),
-                  Card1User(
-                    user: usersData["joseph"],
-                  ),
-                ],
-              ),
-            ],
-          )),
+            child: Column(
+              mainAxisAlignment: MainAxisAlignment.spaceAround,
+              children: [
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Card1User(
+                      user: usersData["janice"],
+                    ),
+                    Card1User(
+                      user: usersData["edward"],
+                    ),
+                    Card1User(
+                      user: usersData["jesse"],
+                    ),
+                  ],
+                ),
+                Row(
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: [
+                    Card1User(
+                      user: usersData["allan"],
+                    ),
+                    Card1User(
+                      user: usersData["brenda"],
+                    ),
+                    Card1User(
+                      user: usersData["joseph"],
+                    ),
+                  ],
+                ),
+              ],
+            ),
+          ),
         ],
       ),
     );

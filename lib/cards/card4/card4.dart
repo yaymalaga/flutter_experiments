@@ -1,5 +1,6 @@
 import 'package:cards_ui/components/header.dart';
 import 'package:cards_ui/components/gradient_card.dart';
+import 'package:cards_ui/components/likes_info.dart';
 import 'package:cards_ui/components/user_avatar.dart';
 import 'package:cards_ui/utils/users.dart';
 import 'package:flutter/material.dart';
@@ -19,41 +20,28 @@ class Card4 extends StatelessWidget {
               radius: 18,
               user: usersData["kenneth"],
             ),
-            title: "Kenneth Erickson",
+            title: usersData["kenneth"].fullName,
             titleColor: Colors.white,
             titleSize: 18,
             iconColor: Color(0xffc3c6d1),
           ),
-          Container(
-            margin: EdgeInsets.only(
-              bottom: 12,
-            ),
-            child: Text(
-              'The word "coffee" entered the English ' +
-                  'language in 1582 via the Dutch koffie…',
-              style: GoogleFonts.lato(
-                fontSize: 16,
-                color: Colors.white,
-                fontWeight: FontWeight.w500,
-              ),
+          Spacer(),
+          Text(
+            'The word "coffee" entered the English ' +
+                'language in 1582 via the Dutch koffie…',
+            style: GoogleFonts.lato(
+              fontSize: 16,
+              color: Colors.white,
+              fontWeight: FontWeight.w500,
             ),
           ),
+          Spacer(flex: 2),
           Row(
             children: [
-              Icon(
-                Icons.thumb_up,
-                color: Colors.white,
-              ),
-              SizedBox(
-                width: 8,
-              ),
-              Text(
-                "783 Likes",
-                style: GoogleFonts.lato(
-                  fontSize: 17,
-                  color: Colors.white,
-                  fontWeight: FontWeight.w500,
-                ),
+              LikesInfo(
+                iconColor: Colors.white,
+                textColor: Colors.white,
+                likesNumber: 783,
               ),
               SizedBox(
                 width: 30,

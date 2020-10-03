@@ -16,10 +16,10 @@ class Card5 extends StatelessWidget {
           avatar: UserAvatar(
             user: usersData["kenneth"],
           ),
-          title: "Kenneth Erickson",
+          title: usersData["kenneth"].fullName,
           titleColor: Colors.white,
           titleSize: 17,
-          subtitle: "San Diego, CA",
+          subtitle: usersData["kenneth"].subtitle,
           subtitleColor: Colors.white,
           subtitleSize: 16,
           margin: EdgeInsets.only(top: 8),
