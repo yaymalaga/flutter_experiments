@@ -49,6 +49,7 @@ class Header extends StatelessWidget {
       leading: this.avatar,
       title: Text(
         this.title,
+        overflow: TextOverflow.ellipsis,
         style: GoogleFonts.lato(
           fontSize: this.titleSize,
           color: this.titleColor,

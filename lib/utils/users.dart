@@ -102,4 +102,21 @@ final Map<String, User> usersData = {
     pathMiniature: "assets/joseph.png",
     subtitle: "Los Angeles, CA",
   ),
+  "food": User(
+    fullName: "Food Festival - New Delhi",
+    pathMiniature: "assets/food.png",
+    subtitle: "New Delhi,IND",
+  ),
+  "anon1": User(
+    pathMiniature: "assets/anon1.png",
+  ),
+  "anon2": User(
+    pathMiniature: "assets/anon2.png",
+  ),
+  "anon3": User(
+    pathMiniature: "assets/anon3.png",
+  ),
+  "anon4": User(
+    pathMiniature: "assets/anon4.png",
+  ),
 };

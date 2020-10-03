@@ -6,6 +6,7 @@ import 'package:cards_ui/cards/card5/card5.dart';
 import 'package:cards_ui/cards/card6/card6.dart';
 import 'package:cards_ui/cards/card7/card7.dart';
 import 'package:cards_ui/cards/card8/card8.dart';
+import 'package:cards_ui/cards/card9/card9.dart';
 import 'package:flutter/material.dart';
 
 void main() {
@@ -50,6 +51,8 @@ class HomePage extends StatelessWidget {
             Card7(),
             SizedBox(height: 30),
             Card8(),
+            SizedBox(height: 30),
+            Card9(),
           ],
         ),
       ),
