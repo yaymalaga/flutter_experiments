@@ -7,7 +7,7 @@ class GradientCard extends StatelessWidget {
   final Alignment endGradient;
   final double borderRadius;
 
-  GradientCard({
+  const GradientCard({
     @required this.child,
     @required this.height,
     this.padding = const EdgeInsets.fromLTRB(20, 6, 20, 24),
@@ -18,10 +18,10 @@ class GradientCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: this.padding,
-      height: this.height,
+      padding: padding,
+      height: height,
       decoration: BoxDecoration(
-        gradient: LinearGradient(
+        gradient: const LinearGradient(
           begin: Alignment.topLeft,
           end: Alignment.bottomRight,
           colors: [
@@ -32,7 +32,7 @@ class GradientCard extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(borderRadius),
       ),
-      child: this.child,
+      child: child,
     );
   }
 }

@@ -11,22 +11,22 @@ class UserAvatar extends StatelessWidget {
   Widget build(BuildContext context) {
     CircleAvatar avatar;
 
-    if (this.user.pathMiniature == null) {
+    if (user.pathMiniature == null) {
       avatar = CircleAvatar(
-        radius: this.radius,
+        radius: radius,
+        backgroundColor: user.backgroundColor,
         child: Text(
-          this.user.nameMiniature,
+          user.nameMiniature,
           style: TextStyle(
-            color: this.user.letterColor,
+            color: user.letterColor,
           ),
         ),
-        backgroundColor: this.user.backgroundColor,
       );
     } else {
       avatar = CircleAvatar(
-        radius: this.radius,
+        radius: radius,
         backgroundImage: AssetImage(
-          this.user.pathMiniature,
+          user.pathMiniature,
         ),
       );
     }

@@ -7,11 +7,13 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Card4 extends StatelessWidget {
+  const Card4();
+
   @override
   Widget build(BuildContext context) {
     return GradientCard(
       height: 240,
-      padding: EdgeInsets.symmetric(horizontal: 37, vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 37, vertical: 30),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -23,34 +25,34 @@ class Card4 extends StatelessWidget {
             title: usersData["kenneth"].fullName,
             titleColor: Colors.white,
             titleSize: 18,
-            iconColor: Color(0xffc3c6d1),
+            iconColor: const Color(0xffc3c6d1),
           ),
-          Spacer(),
+          const Spacer(),
           Text(
-            'The word "coffee" entered the English ' +
-                'language in 1582 via the Dutch koffie…',
+            'The word "coffee" entered the English '
+            'language in 1582 via the Dutch koffie…',
             style: GoogleFonts.lato(
               fontSize: 16,
               color: Colors.white,
               fontWeight: FontWeight.w500,
             ),
           ),
-          Spacer(flex: 2),
+          const Spacer(flex: 2),
           Row(
             children: [
-              LikesInfo(
+              const LikesInfo(
                 iconColor: Colors.white,
                 textColor: Colors.white,
                 likesNumber: 783,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 30,
               ),
-              Icon(
+              const Icon(
                 Icons.chat_bubble,
                 color: Colors.white,
               ),
-              SizedBox(
+              const SizedBox(
                 width: 8,
               ),
               Text(

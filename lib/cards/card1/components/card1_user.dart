@@ -13,15 +13,15 @@ class Card1User extends StatelessWidget {
     return Column(
       mainAxisSize: MainAxisSize.min,
       children: [
-        UserAvatar(user: this.user),
-        SizedBox(
+        UserAvatar(user: user),
+        const SizedBox(
           height: 12,
         ),
         Text(
-          this.user.fullName,
+          user.fullName,
           style: GoogleFonts.lato(
             fontSize: 17,
-            color: Color(0xff131721),
+            color: const Color(0xff131721),
             fontWeight: FontWeight.w500,
           ),
         ),

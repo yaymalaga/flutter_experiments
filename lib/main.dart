@@ -31,11 +31,11 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Color(0xffeff3fc),
+      backgroundColor: const Color(0xffeff3fc),
       body: SafeArea(
         child: ListView(
-          padding: EdgeInsets.all(28),
-          children: [
+          padding: const EdgeInsets.all(28),
+          children: const [
             Card1(),
             SizedBox(height: 30),
             Card2(),

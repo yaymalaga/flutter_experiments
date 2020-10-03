@@ -5,7 +5,7 @@ import 'package:cards_ui/utils/users.dart';
 import 'package:flutter/material.dart';
 
 class Card2 extends StatelessWidget {
-  final List<String> people = [
+  static const List<String> _people = [
     "marisa",
     "kenneth2",
     "michelle",
@@ -14,52 +14,49 @@ class Card2 extends StatelessWidget {
     "troy"
   ];
 
+  const Card2();
+
   @override
   Widget build(BuildContext context) {
     return SimpleCard(
       height: 575,
       child: Column(
         children: [
-          Header(
+          const Header(
             titleColor: Color(0xff8f94a2),
             title: "My messages",
           ),
-          for (var i = 0; i < people.length; i++) ...[
+          for (var i = 0; i < _people.length; i++) ...[
             Header(
               avatar: UserAvatar(
-                radius: 30,
-                user: usersData[people[i]],
+                user: usersData[_people[i]],
               ),
-              title: usersData[people[i]].fullName,
-              titleColor: Color(0xff131721),
-              titleSize: 16,
-              titleWeight: FontWeight.w500,
-              subtitle: usersData[people[i]].subtitle,
-              subtitleColor: Color(0xff858997),
+              title: usersData[_people[i]].fullName,
+              subtitle: usersData[_people[i]].subtitle,
               subtitleSize: 13,
               trailing: Row(
                 mainAxisSize: MainAxisSize.min,
                 children: [
-                  Text(
+                  const Text(
                     "04:00",
                     style: TextStyle(
                       color: Color(0xff858997),
                       fontSize: 12,
                     ),
                   ),
-                  if (usersData[people[i]].notifications != null)
+                  if (usersData[_people[i]].notifications != null)
                     Container(
-                      margin: EdgeInsets.only(left: 8),
+                      margin: const EdgeInsets.only(left: 8),
                       height: 26,
                       width: 26,
                       decoration: BoxDecoration(
-                        color: Color(0xffe3e7fb),
+                        color: const Color(0xffe3e7fb),
                         borderRadius: BorderRadius.circular(4),
                       ),
                       child: Center(
                         child: Text(
-                          "${usersData[people[i]].notifications}",
-                          style: TextStyle(
+                          "${usersData[_people[i]].notifications}",
+                          style: const TextStyle(
                             color: Color(0xff465de2),
                             fontSize: 12,
                             fontWeight: FontWeight.bold,
@@ -70,7 +67,7 @@ class Card2 extends StatelessWidget {
                 ],
               ),
             ),
-            if (i != people.length - 1) SizedBox(height: 10),
+            if (i != _people.length - 1) const SizedBox(height: 10),
           ],
         ],
       ),

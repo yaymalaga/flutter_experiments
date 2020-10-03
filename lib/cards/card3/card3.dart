@@ -6,11 +6,13 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Card3 extends StatelessWidget {
+  const Card3();
+
   @override
   Widget build(BuildContext context) {
     return SimpleCard(
       height: 194,
-      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -27,7 +29,7 @@ class Card3 extends StatelessWidget {
                 height: 5,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(3),
-                  color: Color(0xffeeeff3),
+                  color: const Color(0xffeeeff3),
                 ),
               ),
               LayoutBuilder(
@@ -36,7 +38,7 @@ class Card3 extends StatelessWidget {
                   width: constrains.maxWidth / 2,
                   decoration: BoxDecoration(
                     borderRadius: BorderRadius.circular(3),
-                    color: Color(0xff5351fb),
+                    color: const Color(0xff5351fb),
                   ),
                 ),
               )
@@ -49,7 +51,7 @@ class Card3 extends StatelessWidget {
                 "Professional",
                 style: GoogleFonts.lato(
                   fontSize: 16,
-                  color: Color(0xff131721),
+                  color: const Color(0xff131721),
                   fontWeight: FontWeight.w500,
                 ),
               ),
@@ -57,7 +59,7 @@ class Card3 extends StatelessWidget {
                 "792 Points",
                 style: GoogleFonts.lato(
                   fontSize: 16,
-                  color: Color(0xff858997),
+                  color: const Color(0xff858997),
                   fontWeight: FontWeight.w500,
                 ),
               ),

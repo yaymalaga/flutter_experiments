@@ -4,23 +4,23 @@ import 'package:cards_ui/components/gradient_card.dart';
 import 'package:flutter/material.dart';
 
 class Card6 extends StatelessWidget {
+  const Card6();
+
   @override
   Widget build(BuildContext context) {
-    return GradientCard(
+    return const GradientCard(
       height: 110,
-      padding: EdgeInsets.symmetric(horizontal: 30, vertical: 0),
+      padding: EdgeInsets.symmetric(horizontal: 30),
       endGradient: Alignment(1, 0),
       child: Center(
         child: Header(
           title: "1.8M",
           titleColor: Colors.white,
-          titleSize: 16,
           subtitle: "App Downloads",
           subtitleColor: Colors.white,
-          subtitleSize: 14,
           iconColor: Color(0xffc3c6d1),
           trailing: Padding(
-            padding: const EdgeInsets.symmetric(vertical: 4.0),
+            padding: EdgeInsets.symmetric(vertical: 4.0),
             child: DownloadsBars(
               proportionalHeights: [
                 0.9,

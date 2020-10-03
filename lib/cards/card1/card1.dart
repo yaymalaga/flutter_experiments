@@ -5,13 +5,15 @@ import 'package:cards_ui/utils/users.dart';
 import 'package:flutter/material.dart';
 
 class Card1 extends StatelessWidget {
+  const Card1();
+
   @override
   Widget build(BuildContext context) {
     return SimpleCard(
       height: 333,
       child: Column(
         children: [
-          Header(
+          const Header(
             titleColor: Color(0xff8f94a2),
             title: "Total Active Users",
           ),

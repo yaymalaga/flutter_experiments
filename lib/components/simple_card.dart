@@ -5,7 +5,7 @@ class SimpleCard extends StatelessWidget {
   final double height;
   final EdgeInsets padding;
 
-  SimpleCard(
+  const SimpleCard(
       {@required this.child,
       @required this.height,
       this.padding = const EdgeInsets.fromLTRB(20, 6, 20, 24)});
@@ -13,10 +13,10 @@ class SimpleCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      padding: this.padding,
-      height: this.height,
+      padding: padding,
+      height: height,
       decoration: BoxDecoration(
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: Color(0xffdbd8ea),
             offset: Offset(0, 10),
@@ -26,7 +26,7 @@ class SimpleCard extends StatelessWidget {
         color: Colors.white,
         borderRadius: BorderRadius.circular(20),
       ),
-      child: this.child,
+      child: child,
     );
   }
 }

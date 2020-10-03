@@ -20,7 +20,7 @@ class User {
   });
 }
 
-final Map<String, User> usersData = {
+const Map<String, User> usersData = {
   "janice": User(
     fullName: "Janice",
     pathMiniature: "assets/janice.png",

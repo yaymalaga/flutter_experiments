@@ -1,5 +1,4 @@
 import 'package:cards_ui/components/header.dart';
-import 'package:cards_ui/components/gradient_card.dart';
 import 'package:cards_ui/components/likes_info.dart';
 import 'package:cards_ui/components/simple_card.dart';
 import 'package:cards_ui/components/user_avatar.dart';
@@ -8,11 +7,13 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Card7 extends StatelessWidget {
+  const Card7();
+
   @override
   Widget build(BuildContext context) {
     return SimpleCard(
       height: 360,
-      padding: EdgeInsets.symmetric(horizontal: 37, vertical: 30),
+      padding: const EdgeInsets.symmetric(horizontal: 37, vertical: 30),
       child: Column(
         mainAxisAlignment: MainAxisAlignment.spaceBetween,
         children: [
@@ -22,25 +23,25 @@ class Card7 extends StatelessWidget {
               user: usersData["anne"],
             ),
             title: usersData["anne"].fullName,
-            titleColor: Color(0xff131721),
-            titleSize: 16,
-            titleWeight: FontWeight.w500,
             subtitle: usersData["anne"].subtitle,
-            subtitleColor: Color(0xff858997),
             subtitleSize: 13,
-            iconColor: Color(0xffc7c9d0),
+            iconColor: const Color(0xffc7c9d0),
           ),
-          Spacer(),
+          const Spacer(),
           Text(
-            '“User Experience Design” is often used interchangeably with terms such as “User Interface Design” and “Usability”. However, while usability and user interface (UI) design are important aspects of UX design, they are subsets of it – UX design covers a vast array of other areas, too.',
+            "“User Experience Design” is often used interchangeably with terms "
+            "such as “User Interface Design” and “Usability”. However, while "
+            "usability and user interface (UI) design are important aspects of "
+            "UX design, they are subsets of it – UX design covers a vast array "
+            "of other areas, too.",
             style: GoogleFonts.lato(
               fontSize: 16,
-              color: Color(0xff131721),
+              color: const Color(0xff131721),
               fontWeight: FontWeight.w500,
             ),
           ),
-          Spacer(flex: 3),
-          LikesInfo(
+          const Spacer(flex: 3),
+          const LikesInfo(
             iconColor: Color(0xff5d6be5),
             textColor: Color(0xff131721),
             likesNumber: 783,

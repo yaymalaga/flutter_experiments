@@ -3,7 +3,7 @@ import 'package:flutter/material.dart';
 class Bar extends StatelessWidget {
   final double height;
 
-  Bar({@required this.height});
+  const Bar({@required this.height});
 
   @override
   Widget build(BuildContext context) {

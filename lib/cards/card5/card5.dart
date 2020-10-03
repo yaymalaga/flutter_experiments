@@ -5,12 +5,14 @@ import 'package:cards_ui/utils/users.dart';
 import 'package:flutter/material.dart';
 
 class Card5 extends StatelessWidget {
+  const Card5();
+
   @override
   Widget build(BuildContext context) {
     return GradientCard(
       height: 110,
-      padding: EdgeInsets.symmetric(horizontal: 25),
-      endGradient: Alignment(1, 0),
+      padding: const EdgeInsets.symmetric(horizontal: 25),
+      endGradient: const Alignment(1, 0),
       child: Center(
         child: Header(
           avatar: UserAvatar(
@@ -22,9 +24,9 @@ class Card5 extends StatelessWidget {
           subtitle: usersData["kenneth"].subtitle,
           subtitleColor: Colors.white,
           subtitleSize: 16,
-          margin: EdgeInsets.only(top: 8),
+          margin: const EdgeInsets.only(top: 8),
           titleWeight: FontWeight.w900,
-          iconColor: Color(0xffc3c6d1),
+          iconColor: const Color(0xffc3c6d1),
         ),
       ),
     );

@@ -6,7 +6,7 @@ class LikesInfo extends StatelessWidget {
   final Color textColor;
   final int likesNumber;
 
-  LikesInfo({
+  const LikesInfo({
     @required this.iconColor,
     @required this.textColor,
     @required this.likesNumber,
@@ -20,7 +20,7 @@ class LikesInfo extends StatelessWidget {
           Icons.thumb_up,
           color: iconColor,
         ),
-        SizedBox(
+        const SizedBox(
           width: 8,
         ),
         Text(

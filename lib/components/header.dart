@@ -15,7 +15,7 @@ class Header extends StatelessWidget {
   final EdgeInsets margin;
   final Widget trailing;
 
-  Header({
+  const Header({
     this.avatar,
     @required this.title,
     this.titleColor = const Color(0xff131721),
@@ -31,13 +31,13 @@ class Header extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    var subtitleWidget;
-    if (this.subtitle != null) {
+    Text subtitleWidget;
+    if (subtitle != null) {
       subtitleWidget = Text(
-        this.subtitle,
+        subtitle,
         style: GoogleFonts.lato(
-          fontSize: this.subtitleSize,
-          color: this.subtitleColor,
+          fontSize: subtitleSize,
+          color: subtitleColor,
           fontWeight: FontWeight.w500,
         ),
         overflow: TextOverflow.ellipsis,
@@ -46,32 +46,32 @@ class Header extends StatelessWidget {
 
     return ListTile(
       contentPadding: EdgeInsets.zero,
-      leading: this.avatar,
+      leading: avatar,
       title: Text(
-        this.title,
+        title,
         overflow: TextOverflow.ellipsis,
         style: GoogleFonts.lato(
-          fontSize: this.titleSize,
-          color: this.titleColor,
-          fontWeight: this.titleWeight,
+          fontSize: titleSize,
+          color: titleColor,
+          fontWeight: titleWeight,
         ),
       ),
       subtitle: margin == null
           ? subtitleWidget
           : Container(
+              margin: margin,
               child: subtitleWidget,
-              margin: this.margin,
             ),
-      trailing: this.trailing == null
+      trailing: trailing == null
           ? IconButton(
               icon: Icon(
                 Icons.more_horiz,
-                color: this.iconColor,
+                color: iconColor,
               ),
               onPressed: () => {},
             )
           : InkWell(
-              child: this.trailing,
+              child: trailing,
             ),
     );
   }

@@ -7,11 +7,13 @@ import 'package:flutter/material.dart';
 import 'package:google_fonts/google_fonts.dart';
 
 class Card9 extends StatelessWidget {
-  final users = ["anon1", "anon2", "anon3", "anon4"];
+  static const _users = ["anon1", "anon2", "anon3", "anon4"];
+
+  const Card9();
 
   @override
   Widget build(BuildContext context) {
-    final padding = const EdgeInsets.symmetric(horizontal: 30, vertical: 30);
+    const padding = EdgeInsets.symmetric(horizontal: 30, vertical: 30);
 
     return SimpleCard(
       height: 410,
@@ -22,14 +24,13 @@ class Card9 extends StatelessWidget {
             padding: padding,
             child: Header(
               avatar: UserAvatar(
-                radius: 30,
                 user: usersData["food"],
               ),
               title: usersData["food"].fullName,
               subtitle: usersData["food"].subtitle,
             ),
           ),
-          Divider(
+          const Divider(
             color: Color(0xffebedf4),
             height: 1,
             thickness: 1,
@@ -47,7 +48,7 @@ class Card9 extends StatelessWidget {
                       "4 Members Going ",
                       style: GoogleFonts.lato(
                         fontSize: 15,
-                        color: Color(0xff34b06d),
+                        color: const Color(0xff34b06d),
                         fontWeight: FontWeight.w500,
                       ),
                     ),
@@ -55,29 +56,29 @@ class Card9 extends StatelessWidget {
                       "— 3 Pending",
                       style: GoogleFonts.lato(
                         fontSize: 15,
-                        color: Color(0xffa2a5b0),
+                        color: const Color(0xffa2a5b0),
                         fontWeight: FontWeight.w500,
                       ),
                     ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 30,
                 ),
                 Row(
                   mainAxisAlignment: MainAxisAlignment.spaceEvenly,
                   children: [
-                    for (final user in users)
+                    for (final user in _users)
                       UserAvatar(
                         radius: 28,
                         user: usersData[user],
                       ),
                   ],
                 ),
-                SizedBox(
+                const SizedBox(
                   height: 45,
                 ),
-                InkWell(
+                const InkWell(
                   child: GradientCard(
                     height: 64,
                     padding: EdgeInsets.zero,
