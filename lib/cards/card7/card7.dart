@@ -28,16 +28,19 @@ class Card7 extends StatelessWidget {
             iconColor: const Color(0xffc7c9d0),
           ),
           const Spacer(),
-          Text(
-            "“User Experience Design” is often used interchangeably with terms "
-            "such as “User Interface Design” and “Usability”. However, while "
-            "usability and user interface (UI) design are important aspects of "
-            "UX design, they are subsets of it – UX design covers a vast array "
-            "of other areas, too.",
-            style: GoogleFonts.lato(
-              fontSize: 16,
-              color: const Color(0xff131721),
-              fontWeight: FontWeight.w500,
+          Padding(
+            padding: const EdgeInsets.only(right: 26.0),
+            child: Text(
+              "“User Experience Design” is often used interchangeably with terms "
+              "such as “User Interface Design” and “Usability”. However, while "
+              "usability and user interface (UI) design are important aspects of "
+              "UX design, they are subsets of it – UX design covers a vast array "
+              "of other areas, too.",
+              style: GoogleFonts.lato(
+                fontSize: 16,
+                color: const Color(0xff131721),
+                fontWeight: FontWeight.w400,
+              ),
             ),
           ),
           const Spacer(flex: 3),
