@@ -28,7 +28,6 @@ class LikesInfo extends StatelessWidget {
           style: GoogleFonts.lato(
             fontSize: 17,
             color: textColor,
-            fontWeight: FontWeight.w500,
           ),
         ),
       ],

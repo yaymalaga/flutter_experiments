@@ -24,7 +24,7 @@ class Header extends StatelessWidget {
     this.subtitleColor = const Color(0xff858997),
     this.subtitleSize = 14,
     this.margin,
-    this.titleWeight = FontWeight.w500,
+    this.titleWeight = FontWeight.w400,
     this.iconColor = const Color(0xff8f94a2),
     this.trailing,
   });
@@ -38,7 +38,6 @@ class Header extends StatelessWidget {
         style: GoogleFonts.lato(
           fontSize: subtitleSize,
           color: subtitleColor,
-          fontWeight: FontWeight.w500,
         ),
         overflow: TextOverflow.ellipsis,
       );

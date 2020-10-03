@@ -52,7 +52,6 @@ class Card3 extends StatelessWidget {
                 style: GoogleFonts.lato(
                   fontSize: 16,
                   color: const Color(0xff131721),
-                  fontWeight: FontWeight.w500,
                 ),
               ),
               Text(
@@ -60,7 +59,6 @@ class Card3 extends StatelessWidget {
                 style: GoogleFonts.lato(
                   fontSize: 16,
                   color: const Color(0xff858997),
-                  fontWeight: FontWeight.w500,
                 ),
               ),
             ],

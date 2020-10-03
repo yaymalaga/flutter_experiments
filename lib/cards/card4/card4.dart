@@ -34,7 +34,6 @@ class Card4 extends StatelessWidget {
             style: GoogleFonts.lato(
               fontSize: 16,
               color: Colors.white,
-              fontWeight: FontWeight.w500,
             ),
           ),
           const Spacer(flex: 2),
@@ -60,7 +59,6 @@ class Card4 extends StatelessWidget {
                 style: GoogleFonts.lato(
                   fontSize: 17,
                   color: Colors.white,
-                  fontWeight: FontWeight.w500,
                 ),
               ),
             ],

@@ -22,7 +22,6 @@ class Card1User extends StatelessWidget {
           style: GoogleFonts.lato(
             fontSize: 17,
             color: const Color(0xff131721),
-            fontWeight: FontWeight.w500,
           ),
         ),
       ],
