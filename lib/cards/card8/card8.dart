@@ -17,7 +17,7 @@ class Card8 extends StatelessWidget {
   Widget build(BuildContext context) {
     return const UsersListCard(
       people: _people,
-      trailingDetails: true,
+      trailingDetails: false,
     );
   }
 }
