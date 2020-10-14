@@ -10,6 +10,8 @@ import 'package:flutter_experiments/cards_ui/cards/card8/card8.dart';
 import 'package:flutter_experiments/cards_ui/cards/card9/card9.dart';
 
 class CardsUI extends StatelessWidget {
+  const CardsUI();
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
