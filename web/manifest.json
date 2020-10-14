@@ -1,6 +1,6 @@
 {
-    "name": "cards_ui",
-    "short_name": "cards_ui",
+    "name": "flutter_experiments",
+    "short_name": "flutter_experiments",
     "start_url": ".",
     "display": "standalone",
     "background_color": "#0175C2",
