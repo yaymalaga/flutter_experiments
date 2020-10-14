@@ -23,10 +23,17 @@ class HomePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: const Color(0xffeff3fc),
+      appBar: AppBar(
+        backgroundColor: Colors.white,
+        title: const Text(
+          "Flutter experiments",
+          style: TextStyle(
+            color: Colors.black,
+          ),
+        ),
+      ),
       body: SafeArea(
         child: ListView(
-          padding: const EdgeInsets.all(28),
           children: [
             ListTile(
               title: const Text("Cards UI"),
